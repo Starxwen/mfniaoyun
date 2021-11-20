@@ -1,0 +1,73 @@
+{include file="common/header" title="联系我们" hlist="inner-header"/}
+</div>
+<div id="main-body-holder" class="container-fluid">
+    <section id="main-body">
+        <div class="container">
+            <div class="row">
+
+                <!-- Container for main page display content -->
+                <div class="col-xs-12 main-content">
+                    <div class="header-lined">
+                        <h1>联系我们 <small>我们已经准备好回答您的问题</small></h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href=""> 门户首页
+                                </a>
+                            </li>
+                            <li class="active">
+                                售前咨询
+                            </li>
+                        </ol>
+                    </div>
+
+
+
+
+                    <form method="post" action="contact.php" class="form-horizontal" role="form">
+                        <input type="hidden" name="token" value="91eef6a7813d1260fb91f747278dbc078d8b4a15" />
+                        <input type="hidden" name="action" value="send" />
+
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-3 control-label">姓名</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="name" value="" class="form-control" id="inputName" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-3 control-label">邮件地址</label>
+                            <div class="col-sm-7">
+                                <input type="email" name="email" value="" class="form-control" id="inputEmail" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSubject" class="col-sm-3 control-label">主题</label>
+                            <div class="col-sm-7">
+                                <input type="subject" name="subject" value="" class="form-control" id="inputSubject" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage" class="col-sm-3 control-label">信息</label>
+                            <div class="col-sm-9">
+                                <textarea name="message" rows="7" class="form-control" id="inputMessage"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">发送</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+
+
+                </div><!-- /.main-content -->
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+</div>
+{include file="common/footer" /}
